@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarRently</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">CarRently</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Vendors</a>
+      <a href="#">Support</a>
+      <a href="#">Terms</a>
+    </nav>
+    <!-- <div class="auth">
+      <button class="login">Login</button>
+      <button class="signup">Sign Up</button>
+    </div> -->
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Find the Best Car Rental Deals Near You</h1>
+      <p>Compare cars, filter by city and state, and book your ride in minutes.</p>
+      <!-- <button class="primary-btn">Search Cars</button> -->
+    </div>
+    <!-- <div class="hero-image">
+      <img src="images/hero-car.png" alt="Car Illustration" />
+    </div> -->
+  </section>
+
+  <section class="search-bar">
+    <input type="text" id="search-model" placeholder="e.g. Toyota, BMW, Civic..." />
+    <select id="search-city">
+      <option value="">Select City</option>
+      <option value="Los Angeles">Kolkata</option>
+      <option value="Miami">Bangalore</option>
+    </select>
+    <select id="search-state">
+      <option value="">Select State</option>
+      <option value="CA">West Bengal</option>
+      <option value="FL">Karnataka</option>
+    </select>
+    <button class="search" onclick="filterCars()">Search</button>
+  </section>
+
+  <section class="vendors" id="vendor-list">
+    <div class="vendor" data-city="Los Angeles" data-state="CA">
+      <h3>Downtown Rentals</h3>
+      <h5>+91 9145332167</h5>
+      <div class="car">
+        <img src="images/car-toyota.png" alt="Toyota Camry">
+        <span>Maruti Baleno</span>
+        <span>Rs 200/hr</span>
+      </div>
+      <div class="car">
+        <img src="images/car-bmw.png" alt="BMW X5">
+        <span>XUV 700</span>
+        <span>Rs 300/hr</span>
+      </div>
+    </div>
+    <div class="vendor" data-city="Miami" data-state="FL">
+      <h3>CityDrive Rentals</h3>
+      <h5>+91 9238687167</h5>
+      <div class="car">
+        <img src="images/car-honda.png" alt="Honda Civic">
+        <span>Honda City</span>
+        <span>Rs 180/hr</span>
+      </div>
+      <div class="car">
+        <img src="images/car-mazda.png" alt="Mazda MX-5">
+        <span>Brezza</span>
+        <span>Rs 280/hr</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 CarRently. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

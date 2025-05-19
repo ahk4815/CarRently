@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937;
+  color: white;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.auth button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: #e5e7eb;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.vendors {
+  padding: 1rem;
+}
+
+.vendor {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.car img {
+  width: 80px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f2937;
+  color: white;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .search-bar button {
+    width: auto;
+    flex: 1;
+  }
+
+  .car {
+    flex-direction: row;
+  }
+}
